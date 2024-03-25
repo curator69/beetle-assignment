@@ -10,7 +10,17 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import { NavDropModel } from "@/components";
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+import { HamburgerMenu, NavDropModel } from "@/components";
 import { Product, Industries } from "../../data";
 
 const Header = () => {
@@ -24,7 +34,7 @@ const Header = () => {
         className="h-full w-[200px]"
       />
 
-      <NavigationMenu>
+      <NavigationMenu className="header-navigation">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger className="text-base">
@@ -46,12 +56,21 @@ const Header = () => {
         </NavigationMenuList>
       </NavigationMenu>
 
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-8 header-navigation">
         <button className="text-base font-bold">Log In</button>
         <button className="border-2 border-white border-solid rounded-full p-4 px-8 text-base font-bold">
           Request A Demo &#8594;
         </button>
       </div>
+
+      <DropdownMenu className="hamburger-menu">
+        <DropdownMenuTrigger className="hamburger-menu">
+          &#9776;
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <HamburgerMenu />
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   );
 };

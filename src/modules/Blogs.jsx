@@ -12,7 +12,7 @@ const Blogs = () => {
     <div className="bg-white py-24 px-16 flex flex-col gap-8 text-[var(--dark-purple)] -mt-16">
       <p className="font-bold text-5xl">Latest Posts</p>
 
-      <div className="flex items-centerr justify-between">
+      <div className="blogsSearchAndFilterWrapper flex items-centerr justify-between">
         <ul className="flex gap-4 items-center">
           {["All", "Private Equity", "Investment Banking", "Consulting"].map(
             (item, index) => (
@@ -41,7 +41,7 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-8">
+      <div className="blogsWrapper grid grid-cols-3 gap-8">
         {blogsToShow.map((blog, index) => (
           <Blog blog={blog} key={index} />
         ))}

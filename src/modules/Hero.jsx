@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex items-center gap-20 px-16">
+    <div className="heroWrapper flex items-center gap-20 px-16">
       <div className="flex flex-col gap-8">
         <h1 className="font-bold text-5xl capitalize">
           Build more{" "}
@@ -16,7 +16,7 @@ const Hero = () => {
           ex-investors for Venture Capital
         </p>
 
-        <div className="bg-white p-2 pr-2 rounded-full flex items-center justify-between gap-4">
+        <div className="heroCtaWrappper bg-white p-2 pr-2 rounded-full flex items-center justify-between gap-4">
           <input
             type="email"
             placeholder="Enter your email"

@@ -5,6 +5,7 @@ import FAQS from "./FAQS";
 import InputSnipper from "./InputSnipper";
 import RangeSelector from "./RangeSelector";
 import Blog from "./Blog";
+import HamburgerMenu from "./HamburgerMenu";
 
 export {
   NavDropModel,
@@ -14,4 +15,5 @@ export {
   InputSnipper,
   RangeSelector,
   Blog,
+  HamburgerMenu,
 };
