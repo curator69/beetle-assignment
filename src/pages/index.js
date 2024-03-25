@@ -1,4 +1,4 @@
-import { Header, Hero, MainDetails, Footer } from "@/modules";
+import { Header, Hero, MainDetails, Footer, Blogs } from "@/modules";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -9,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <MainDetails />
+      <Blogs />
       <Footer />
     </main>
   );

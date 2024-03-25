@@ -4,6 +4,7 @@ import Calculator from "./Calculator";
 import FAQS from "./FAQS";
 import InputSnipper from "./InputSnipper";
 import RangeSelector from "./RangeSelector";
+import Blog from "./Blog";
 
 export {
   NavDropModel,
@@ -12,4 +13,5 @@ export {
   FAQS,
   InputSnipper,
   RangeSelector,
+  Blog,
 };
